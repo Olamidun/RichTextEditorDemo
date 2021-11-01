@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <form method="POST">
+            {% csrf_token %}
+            <p>Create Your article</p>
+            {{form.as_p}}
+            {{form.media}}
+            <button type="submit">Create Article</button>
+        </form>
+    </body>
+</html>

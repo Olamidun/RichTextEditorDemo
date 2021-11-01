@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        {% for article in articles %}
+         <div>Title of Article: {{article.title}}</div>
+         <div>{{article.content|safe}}</div>
+         <div>Views: {{article.number_of_times_viewed}}</div>
+         <div>Date published: {{article.date_published}}</div>
+         <br><br>
+        {% endfor %}
+    </body>
+</html>
